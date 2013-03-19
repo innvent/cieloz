@@ -12,6 +12,7 @@ class Cieloz::RequisicaoTransacao
 
     include Cieloz::Helpers
 
+    hattr_writer :bandeira, :produto, :parcelas
     attr_reader :bandeira, :produto, :parcelas
 
     validates :bandeira, :produto, :parcelas, presence: true

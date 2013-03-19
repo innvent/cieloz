@@ -5,8 +5,8 @@ class Cieloz::RequisicaoTransacao < Cieloz::Requisicao
   AUTORIZACAO_DIRETA        = 3
   RECORRENTE                = 4
 
-  hattr_writer  :dados_portador, :dados_pedido, :forma_pagamento
-  attr_reader   :dados_portador, :dados_pedido, :forma_pagamento
+  hattr_writer  :dados_ec, :dados_portador, :dados_pedido, :forma_pagamento
+  attr_reader   :dados_ec, :dados_portador, :dados_pedido, :forma_pagamento
   attr_reader   :autorizar, :capturar
   attr_accessor :campo_livre, :url_retorno
 
